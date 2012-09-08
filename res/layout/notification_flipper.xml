@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification_flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="horizontal" >
+
+    <include layout="@layout/notification_home_view" />
+
+    <include layout="@layout/notification_detail_view" />
+
+    <include layout="@layout/notification_info_view" />
+</ViewFlipper>

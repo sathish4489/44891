@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Howdy</string>
+    <string name="strTitle">Howdy!</string>
+    <string name="registration_title">Thank you for downloading Howdy!</string>
+    <string name="registration_mobile_number">Please enter your mobile number.</string>
+    <string name="registration_get_verification">GET VERIFICATION CODE</string>
+    <string name="registration_info">Please tell about yourself!</string>
+    <string name="verification_info">We have sent you a text message with your unique verification code. Please enter the code below.</string>
+    <string name="verification_code">Please enter your unique code.</string>
+    <string name="verification_send">GET STARTED</string>
+    <string name="verification_resend">RESEND VERFICATION CODE</string>
+    <string name="strHomeConfirm">We will send you a verification code via SMS! \n Kindly enter the verification code on the following Screen to enable your account!</string>
+    <string name="strMobileNumber">Mobile Number</string>
+    <string name="strFirstName">First Name</string>
+    <string name="strLastName">Last Name</string>
+    <string name="strEmail">Email</string>
+    <string name="strPassword">Password</string>
+    <string name="strGender">Gender</string>
+    <string name="strDOB">Date Of Birth</string>
+    <string name="strGenderPrompt">Choose Gender</string>
+
+    <string-array name="Gender_Arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="strDateDisplay">DD MM YYYY</string>
+    <string name="strRegisterCompletion">Please enter the verification code received in the below box to complete to your registration!</string>
+    <string name="strVerificationCode">Verification Code</string>
+    <string name="strResendVerificationCode">Resend Verification Code</string>
+    <string name="strEditMobileNumber">Edit Mobile Number</string>
+    <string name="StrDone">Done</string>
+    <string name="strSubmit">Submit</string>
+    <string name="strNext">Next</string>
+    <string name="strNotificationTitle">Notifications</string>
+    <string name="strEdit">Edit</string>
+    <string name="strBack">Back</string>
+    <string name="strCall">Call</string>
+    <string name="strInfo">Info</string>
+    <string name="search_hint">Search</string>
+    <string name="hello">Hello World, CybaseActivity!</string>
+    <string name="design_blue">#33B5E5</string>
+    <string name="design_black_light">#101214</string>
+    <string name="design_black">#000000</string>
+    <string name="design_text_prime">#f5f5f5</string>
+    <string name="design_text_sec">#abdbed</string>
+    <string name="app_next">Next</string>
+    <string name="app_add">Add</string>
+    <string name="app_image">image</string>
+    <string name="app_send">Post</string>
+    <string name="app_done">Done</string>
+    <string name="app_back">Back</string>
+    <string name="app_cancel">Cancel</string>
+    <string name="app_nw">Internet Connection Required</string>
+    <string name="app_nw_msg">Internet Connection Required to use this application.Please Enable your Internet Connection!</string>
+    <string name="download_thanks">Thank you for downloading Howdy!</string>
+    <string name="enter_number">Please enter your mobile number: </string>
+    <string name="mnumber_format">mobile number (10-digits)</string>
+    <string name="veri_info">We will send you a verification code via SMS! Kindly enter the verification code on the following screen to enable  your account!</string>
+    <string name="reg_firstname_text">First Name: </string>
+    <string name="reg_firstname_hint">First Name </string>
+    <string name="reg_lastname_text">Last Name: </string>
+    <string name="reg_lastname_hint">Last Name </string>
+    <string name="reg_email_text">Email: </string>
+    <string name="reg_email_hint">Email</string>
+    <string name="reg_password_text">Password: </string>
+    <string name="reg_password_hint">Password</string>
+    <string name="reg_nickname_text">Nickname: </string>
+    <string name="reg_nickname_hint">Nickname</string>
+    <string name="reg_gender_text">Gender: </string>
+    <string name="reg_gender_male">Male</string>
+    <string name="reg_gender_female">Female</string>
+    <string name="reg_dob_text">Date of Birth: </string>
+    <string name="reg_dob_hint">Birthday</string>
+    <string name="veri_info2">Please enter the verification code received in the below box to complete registration!</string>
+    <string name="verification_hint">Verification Code</string>
+    <string name="resend_number">Enter Mobile Number</string>
+    <string name="edit_mobileno">Edit Mobile Number</string>
+
+    <!-- Categories page reosurces -->
+    <string name="cat_name">Categories</string>
+    <string name="cat_favourite">Favourites</string>
+    <string name="cat_btn_restaurant">Restaurants</string>
+    <string name="cat_btn_bar">Bars &amp; Pubs</string>
+    <string name="cat_btn_cafe">Cafes</string>
+    <string name="cat_btn_gym">Fitness &amp; Gym</string>
+    <string name="cat_btn_spa">Beauty &amp; Spa</string>
+    <string name="cat_btn_cinema">Cinema</string>
+    <string name="cat_staron">staron</string>
+    <string name="cat_staroff">staroff</string>
+    <string name="cat_fav_add">Add</string>
+    <string name="cat_fav_added">Remove</string>
+    <string name="cat_tellafriend">Tell a friend</string>
+    <string name="cat_addplace_name">*Name : </string>
+    <string name="cat_addplace_category">*Category : </string>
+    <string name="cat_addplace_address">Address : </string>
+    <string name="cat_addplace_address_hint">Address</string>
+    <string name="cat_addplace_description">*Description : </string>
+    <string name="cat_addplace_description_hint">Description</string>
+    <string name="cat_addplace_locateonmap">Locate on Map</string>
+    <string name="cat_addplace_locateChange">Change Location</string>
+    <string name="cat_addplace_locateonmap_msg">Tap on Map to drop a pin</string>
+    <string name="cat_addplace_locateonmap_msg2">Tap on Map to drop a pin at the current location. You can zoom in to get really precise!!</string>
+    <string name="cat_addplace_locateonmap_msg3">Tap on Map to drop a pin at the current location, tap again to remove pin. You can zoom in to get really precise!!</string>
+    <string name="cat_addplace_Prompt">Choose Category</string>
+
+    <string-array name="category_array">
+        <item>Dining</item>
+        <item>Shopping</item>
+        <item>Night Life</item>
+        <item>Coffee</item>
+        <item>Hotels</item>
+        <item>Fitness</item>
+    </string-array>
+
+    <string name="cat_addplace_name_hint">Place Name</string>
+    <string name="cat_write_a_review">Write a Review</string>
+    <string name="cat_review_by">by </string>
+    <string name="cat_review_on">on </string>
+    <string name="cat_review_ok">OK</string>
+    <string name="cat_review_rate">Rate It!</string>
+    <string name="cat_review_cancel">Cancel</string>
+    <string name="cat_review_unknown">unknown </string>
+    <string name="cat_sumit_review">Submit Review</string>
+    <string name="cat_rating_msg">Tap a Star to Rate</string>
+    <string name="cat_rating_from">From : </string>
+    <string name="cat_rating_anonymous">Review as Anonymous </string>
+    <string name="cat_reviewer_prompt">Choose Reviewer</string>
+
+    <string-array name="reviewer_array">
+        <item>Anonymous</item>
+        <item>Nick Name</item>
+    </string-array>
+
+    <string name="cat_rating_title">Title : </string>
+    <string name="cat_rating_title_hint">Title</string>
+    <string name="cat_rating_review">Review : (1000 Characters)</string>
+    <string name="cat_rating_review_hint">Write your review here</string>
+    <string name="cat_movie">Movies</string>
+    <string name="cat_ref">invisible#ref</string>
+    <string name="cat_details_name">PVR Cinemas</string>
+    <string name="cat_add_a_place">Add a Place</string>
+    <string name="cat_contibute_text">Can\'t find what you are looking for? Contribute!!</string>
+    <string name="cat_contibute_text2">Unable find what you are looking for? Contribute!!</string>
+    <!-- Notification page reosurces -->
+    <string name="noti_name">Notifications</string>
+    <string name="noti_btn_all">All</string>
+    <string name="noti_btn_fav">Favourites</string>
+    <string name="noti_no_message">No Notifications Available</string>
+    <!-- Setting page reosurces -->
+    <string name="setting_name">Settings</string>
+    <string name="setting_help">Help</string>
+    <string name="setting_about">About Us</string>
+    <string name="setting_tell_friend">Tell a Friend</string>
+    <string name="setting_notification">Disable Notifications</string>
+    <string name="setting_notification_on">Enable Notifications</string>
+    <string name="setting_nw_status">Network Status</string>
+    <string name="setting_nw_status_enabled">Network Available</string>
+    <string name="setting_nw_status_disabled">Network Not Available</string>
+    <string name="setting_share">Keep me Logged in</string>
+    <string name="setting_favourites">Favourites</string>
+    <string name="setting_usage">Usage</string>
+    <string name="setting_landscape">Landscape Mode</string>
+    <string name="setting_about_us_content">Being in the field of sms messaging we realized that it is better to give the power to choose to the consumer, hence we have introduced an opt-in app where you have the power to get notifications only from your chosen organizations.</string>
+    <string name="setting_help_content">Please get in touch with us on support@mhowdy.in</string>
+    <string name="setting_turn_off_notification_content">Do you want to stop receiving Notifications for your Favourites?</string>
+    <string name="setting_turn_on_notification_content">Your Favourite item(s) Notifications enabled</string>
+
+</resources>

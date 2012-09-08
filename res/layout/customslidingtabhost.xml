@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<LinearLayout
+	    android:id="@+id/contentViewLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@+id/bottomBar"
+	    android:background="#EEE"
+	    android:orientation="vertical" />
+
+	<HorizontalScrollView
+    	android:id="@+id/bottomBar"
+    	android:scrollbarTrackHorizontal="@drawable/scrollbar_horizontal_track"
+    	android:scrollbarThumbHorizontal="@drawable/scrollbar_horizontal_thumb"
+    	android:scrollbarSize="2dip"
+    	android:layout_alignParentBottom="true" 
+    	android:layout_width="fill_parent"
+    	android:background="@drawable/bottom_bar" android:layout_height="55dip">
+
+    	<RadioGroup
+    	    android:id="@+id/bottomMenu"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="horizontal" >
+
+    	</RadioGroup>
+	</HorizontalScrollView>
+</RelativeLayout>

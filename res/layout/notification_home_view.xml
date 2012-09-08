@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/item_click"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/strEdit"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#f5f5f5" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#33B5E5" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNotificationTitle"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/strNotificationTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#f5f5f5" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#33B5E5"
+            android:visibility="invisible" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp"
+            android:text="@string/app_next"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#f5f5f5"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#33B5E5" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edSearch"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_hint"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/edSearch"
+            android:clickable="true"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <com.cybase.android.mhowdy.widgets.SegmentedRadioGroup
+        android:id="@+id/segment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSearch"
+        android:layout_margin="15dip"
+        android:checkedButton="@+id/butAll"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/butAll"
+            android:button="@null"
+            android:gravity="center"
+            android:minHeight="33dip"
+            android:minWidth="140dip"
+            android:text="All"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/radio_colors" />
+
+        <RadioButton
+            android:id="@+id/butFavorites"
+            android:button="@null"
+            android:gravity="center"
+            android:minHeight="33dip"
+            android:minWidth="140dip"
+            android:text="Favourites"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/radio_colors" />
+    </com.cybase.android.mhowdy.widgets.SegmentedRadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/white_fade" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_notifications"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/divider"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+</LinearLayout>

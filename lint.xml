@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HardcodedText">
+        <ignore path="res\layout\register_1.xml" />
+    </issue>
+    <issue id="InefficientWeight">
+        <ignore path="res\layout\register_1.xml" />
+    </issue>
+    <issue id="UnusedResources">
+        <ignore path="res\layout\register_1.xml" />
+    </issue>
+</lint>

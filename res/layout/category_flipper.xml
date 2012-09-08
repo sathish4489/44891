@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cat_flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/app_bg"
+    android:orientation="horizontal" >
+
+    <include layout="@layout/category_home" />
+
+    <include layout="@layout/category_list" />
+
+    <include layout="@layout/category_favourite" />
+
+    <include layout="@layout/category_details" />
+
+    <include layout="@layout/category_reviews" />
+
+    <include layout="@layout/category_write_a_review" />
+
+    <include layout="@layout/category_addplace" />
+
+    <include layout="@layout/category_addplace2" />
+
+    <include layout="@layout/category_map" />
+
+</ViewFlipper>

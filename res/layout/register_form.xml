@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/app_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/user_info_bg" >
+
+        <TextView
+            android:id="@+id/str_registration_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="@string/registration_info"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/str_registration_title"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/edFirstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/str_registration_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/text_box"
+                    android:hint="@string/reg_firstname_hint"
+                    android:inputType="textPersonName"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edLastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/edFirstName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/text_box"
+                    android:hint="@string/reg_lastname_hint"
+                    android:inputType="textPersonName"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666" />
+
+                <EditText
+                    android:id="@+id/edEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/edLastName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/text_box"
+                    android:hint="@string/reg_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="35"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666" />
+
+                <EditText
+                    android:id="@+id/edNickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/edEmail"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/text_box"
+                    android:hint="@string/reg_nickname_hint"
+                    android:inputType="textPersonName"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666" />
+
+                <RadioGroup
+                    android:id="@+id/rdGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/edNickname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/text_box_transperent"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rdGenderMale"
+                        style="@drawable/new_radio"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|right"
+                        android:background="@drawable/text_box"
+                        android:button="@drawable/new_radio"
+                        android:gravity="center|right"
+                        android:paddingRight="16dp"
+                        android:text="@string/reg_gender_male"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#666" />
+
+                    <RadioButton
+                        android:id="@+id/rdGenderFemale"
+                        style="@drawable/new_radio"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|right"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/text_box"
+                        android:button="@drawable/new_radio"
+                        android:checked="true"
+                        android:gravity="center|right"
+                        android:paddingRight="16dp"
+                        android:text="@string/reg_gender_female"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#666" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/imgButtonCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/rdGender"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/text_box"
+                    android:drawableRight="@drawable/user_info_icon_calendar"
+                    android:focusable="false"
+                    android:hint="@string/reg_dob_hint"
+                    android:inputType="datetime"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#666" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/app_logo_header_center" >
+
+        <Button
+            android:id="@+id/butNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/header_nav_next" />
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/header_nav_previous" />
+    </RelativeLayout>
+
+</RelativeLayout>

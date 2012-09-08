@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cat_nav_addplace2back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/item_click"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/app_back"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#f5f5f5" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#33B5E5" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cat_details_name"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cat_add_a_place"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#f5f5f5" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#33B5E5"
+            android:visibility="invisible" >
+        </LinearLayout>
+        <!-- android:id="@+id/cat_addplace_add" add in below text view -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/item_click"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="13dp"
+            android:text="@string/app_add"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#f5f5f5"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#33B5E5" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="right|center_vertical"
+            android:text="@string/cat_addplace_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/app_button_text_prim" />
+
+        <EditText
+            android:id="@+id/addplace_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.4"
+            android:hint="@string/cat_addplace_name_hint"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="right|center_vertical"
+            android:text="@string/cat_addplace_category"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/app_button_text_prim" />
+
+        <Spinner
+            android:id="@+id/addplace_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.4"
+            android:prompt="@string/cat_addplace_Prompt"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="right|center_vertical"
+            android:text="@string/cat_addplace_description"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/app_button_text_prim" />
+
+        <EditText
+            android:id="@+id/addplace_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="0.4"
+            android:gravity="top"
+            android:hint="@string/cat_addplace_description_hint"
+            android:lines="2"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="right|center_vertical"
+            android:text="@string/cat_addplace_address"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@drawable/app_button_text_prim" />
+
+        <EditText
+            android:id="@+id/addplace_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="0.4"
+            android:gravity="top"
+            android:hint="@string/cat_addplace_address_hint"
+            android:imeOptions="actionDone"
+            android:lines="2"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="@string/cat_addplace_locateonmap_msg"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@drawable/app_button_text_prim" />
+
+    <TextView
+        android:id="@+id/cat_locateonmap"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/app_button"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/cat_addplace_locateonmap"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@drawable/app_button_text" />
+
+</LinearLayout>

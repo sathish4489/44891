@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cat_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#f5f5f5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:background="#33B5E5" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/favourite_link"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/item_click"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/fav_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/cat_favourite"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#f5f5f5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/fav_text"
+            android:contentDescription="@string/cat_favourite"
+            android:paddingLeft="150dp"
+            android:src="@drawable/star" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/white_fade" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/searchtext_category_home"
+            android:layout_width="200dp"
+            android:layout_height="46dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:gravity="center_vertical"
+            android:hint="@string/search_hint"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/searchtext_category_home"
+            android:clickable="true"
+            android:contentDescription="@string/cat_favourite"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/white_fade" >
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/cat_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:columnWidth="85dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</LinearLayout>
